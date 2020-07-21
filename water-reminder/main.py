@@ -12,3 +12,5 @@ if __name__ == "__main__":
         time.sleep(6)       # Will remind after one hour.
         
         # In case you want to close the program and the notification should keep coming run the program using pythonw ./main.py ( after going to the folder ).
+
+        ## End ##
