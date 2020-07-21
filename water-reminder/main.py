@@ -9,6 +9,6 @@ if __name__ == "__main__":
             app_icon = "icon.png",
             timeout = 10        # Will stay for 10 seconds.
         )
-        time.sleep(60*60)       # Will remind after one hour.
+        time.sleep(6)       # Will remind after one hour.
         
         # In case you want to close the program and the notification should keep coming run the program using pythonw ./main.py ( after going to the folder ).
