@@ -1,4 +1,4 @@
-import os       # can be installed by pip install os
+import os       # can be installed by pip install os if error is showed
 
 def createIfNotExist(folder):
     if not os.path.exists(folder):
